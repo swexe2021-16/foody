@@ -11,9 +11,7 @@ class UsersController < ApplicationController
     @user = User.new(uid: params[:user][:uid],
     password: params[:user][:password],
     password_confirmation: params[:user][:password_confirmation])
-    if @user.valid? #validatesを実行してくれる
-      #TODO:成功したことを
-      @user.pass = BCrypt::Password.create(params[:user][:password])
+    if 
       @user.save
       redirect_to users_path
     else
