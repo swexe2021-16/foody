@@ -1,3 +1,46 @@
-// Place all the styles related to the tweets controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#wrapper{
+    width:500px;
+    height:500px;
+    margin:0 auto;
+}
+
+.line {
+  text-decoration: underline;
+}
+
+#A{
+	text-align:center;
+	font-size:25px;
+	height:100%;
+	
+	float:right;
+	width:33%;
+}
+#B{
+	text-align:center;
+	font-size:25px;
+	height:100%;
+	
+	float:left;
+	width:33%;
+}
+
+
+img{
+   
+    height: 20px;
+    width: 20px;
+}
+
+
+
+#C{
+    text-align:center;
+    font-size:25px;
+    height:100%;
+    
+    float:right;
+    width:34%;
+}
+
+
