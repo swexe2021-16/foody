@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   get 'top/logout'
   resources :likes
   root 'tweets#index'
+  
+  
+  
 end

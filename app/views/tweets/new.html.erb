@@ -1,45 +1,90 @@
+<style type="text/css">
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+html {
+  display: table;
+}
+body {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+</style>
+
+
+
+
 <%= form_for @tweet, url: {action: :create} do |f| %>
 
 <div id= "wrapper">
-  <div id="A"><span class="line">距離</span></div>
+  <div id="A"><span class="line">距離</span>
+    <p>
+      650m
+    </p>
+    <p>
+      280m
+    </p>
+    <p>
+      4.1km
+    </p>
+    <p>
+      1.5km
+    </p>
+    <p>
+      950m
+    </p>
+  </div>
   <div id="B"><span class="line">カテゴリ</span>
-    <p>
-      <img src="/assets/レストラン.jpg" alt=""></img>
-    </p>
-    
-    <p>
-      <img src="/assets/レストラン.jpg" alt=""></img>
-    </p>
-    
-    <p>
-      <img src="/assets/レストラン.jpg" alt=""></img>
-    </p>
-    
-    <p>
-      <img src="/assets/ラーメン.jpg" alt=""></img>
-    </p>
+    <div id="E">
+      <p>
+        <img src="/assets/レストラン.jpg" alt=""></img>
+      </p>
+      
+      <p>
+        <img src="/assets/レストラン.jpg" alt=""></img>
+      </p>
+      
+      <p>
+        <img src="/assets/レストラン.jpg" alt=""></img>
+      </p>
+      
+      <p>
+        <img src="/assets/ラーメン.jpg" alt=""></img>
+      </p>
+      
+      <p>
+        <img src="/assets/ラーメン.jpg" alt=""></img>
+      </p>
+    </div>
     
     
     
     
   </div>
   <div id="C"><span class="line">店舗名</span>
-    <P>
-      ココス
-    </P>
-    <p>
-      ジョイフル
-    </p>
-    <p>
-      ジョリーパスタ
-    </p>
-    <p>
-      石田一龍
-    </p>
+    <div id="D">
+      <P>
+        ココス
+      </P>
+      <p>
+        ジョイフル
+      </p>
+      <p>
+        ガスト
+      </p>
+      <p>
+        石田一龍
+      </p>
+      <p>
+        筑豊 麺道場
+      </p>
+    </div>
   </div>
 </div>
-
-<div id=
 
 
 <% end %>
