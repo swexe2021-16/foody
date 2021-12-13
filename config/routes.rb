@@ -11,8 +11,8 @@ Rails.application.routes.draw do
   resources :likes
   root 'tweets#index'
   
-  get 'レビューを投稿する' => 'tweets#new2'
-  get '投稿する' => 'tweets#index2'
-  
+  get 'tweets/new2' => 'tweets#new2'
+  get 'tweets/index2'=> 'tweets#index2'
+  resources :tweets, only: [:tweet]
   
 end
