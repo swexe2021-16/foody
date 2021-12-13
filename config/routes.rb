@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  
+ 
+  
+  get 'review/index'
   resources :users
   resources :tweets
   get 'top/main'
@@ -7,6 +11,8 @@ Rails.application.routes.draw do
   resources :likes
   root 'tweets#index'
   
+  get 'レビューを投稿する' => 'tweets#new2'
+  get '投稿する' => 'tweets#index2'
   
   
 end
