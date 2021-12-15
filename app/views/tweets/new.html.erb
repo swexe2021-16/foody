@@ -18,7 +18,7 @@ body {
 
 
 
-<%= form_for @tweet, url: {action: :create} do |f| %>
+<%= form_for @tweet2, url: {action: :create} do |f| %>
 
 <div id= "wrapper">
   <div id="A"><span class="line">距離</span>
@@ -71,25 +71,26 @@ body {
   <div id="C"><span class="line">店舗名</span>
     <div id="D">
       <p>
-        ジョイフル
+        <%= link_to 'ジョイフル' , review_index9_path %>
       </p>
       <P>
         <%= link_to 'ココス' , review_index_path %>
       </P>
       <p>
-        筑豊 麺道場
+        <%= link_to '筑豊 麺道場' , review_index3_path %>
       </p>
       <p>
-        石田一龍
+        <%= link_to '石田 一龍' , review_index5_path %>
       </p>
       <p>
-        ガスト
+        <%= link_to 'ガスト' , review_index7_path %>
       </p>
       
       
     </div>
   </div>
 </div>
+
 
 
 <% end %>
