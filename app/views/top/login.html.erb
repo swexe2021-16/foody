@@ -1,3 +1,4 @@
+
 <style type="text/css">
 html, body {
   width: 100%;
@@ -9,14 +10,32 @@ html {
   display: table;
 }
 body {
+  background-image: url("/assets/背景.png");
   display: table-cell;
   text-align: center;
   vertical-align: middle;
 }
+
+.box3 {
+    padding: 1em 1em;
+    margin: 2em 35em;
+    color: #2c2c2f;
+    background: #deb887;/*背景色*/
+}
+.box3 p {
+    margin: 0; 
+    padding: 0;
+}
+
 </style>
 
 
+
 <h1>ログイン画面</h1>
+
+<div class="box3">
+
+
 <%= form_tag top_login_path, method: :post do %>
 <p>
   <%= label_tag :uid, 'アカウント' %> 
@@ -36,3 +55,5 @@ body {
 </p>
 
 <% end %>
+
+</div>

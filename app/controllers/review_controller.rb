@@ -32,4 +32,16 @@ class ReviewController < ApplicationController
   def index11
   end
   
+  def index12
+  end
+  
+  def index13
+  end
+  
+  def index14
+  end
+  
+  def index15
+  end
+  
 end

@@ -13,6 +13,10 @@ Rails.application.routes.draw do
   get 'review/index9'
   get 'review/index10'
   get 'review/index11'
+  get 'review/index12'
+  get 'review/index13'
+  get 'review/index14'
+  get 'review/index15'
   
   resources :users
   resources :tweets

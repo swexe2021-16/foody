@@ -9,13 +9,26 @@ html {
   display: table;
 }
 body {
+  background-image: url("/assets/背景.png");
   display: table-cell;
   text-align: center;
   vertical-align: middle;
 }
+
+.box3 {
+    padding: 1em 1em;
+    margin: 2em 35em;
+    color: #2c2c2f;
+    background: #deb887;/*背景色*/
+}
+.box3 p {
+    margin: 0; 
+    padding: 0;
+}
 </style>
 
 <h1>アカウント作成</h1>
+<div class="box3">
 <%= form_for @user, url: {action: :create} do |f| %>
   <p>
   <%= f.label :uid, 'アカウント' %> 
@@ -32,3 +45,4 @@ body {
   <%= link_to 'ログインする', top_main_path %>
   </p>
 <% end %>
+</div>

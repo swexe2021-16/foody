@@ -9,9 +9,21 @@ html {
   display: table;
 }
 body {
+  background-image: url("/assets/背景.png");
   display: table-cell;
   text-align: center;
   vertical-align: middle;
+}
+
+.box3 {
+    padding: -1em 1em;
+    margin: 0em 32em;
+    color: #2c2c2f;
+    background: #deb887;/*背景色*/
+}
+.box3 p {
+    margin: 0; 
+    padding: 0;
 }
 </style>
 
@@ -19,78 +31,104 @@ body {
 
 
 <%= form_for @tweet2, url: {action: :create} do |f| %>
+<P><h1> 　<span class="line">カテゴリ</span>　 <span class="line">店舗名称</span>　　<span class="line">距離</span>　　</h1></P>
+<div class="box3">
+
 
 <div id= "wrapper">
-  <div id="A"><span class="line">距離</span>
-    
+  
+  <%#<p><h4>------------------------------------------------------------------------------------------------------------------------------------</h4></p>%>
+  <div id="A"><%#<span class="line"><h3>距離</h3></span>%>
+    <p>---------------</p>
     <p>
       280m
     </p>
+    <p>---------------</p>
     <p>
       650m
     </p>
+    <p>---------------</p>
     <p>
       950m
     </p>
+    <p>---------------</p>
     <p>
       1.5km
     </p>
+    <p>---------------</p>
     <p>
       4.1km
     </p>
+    <p>---------------</p>
     
     
   </div>
-  <div id="B"><span class="line">カテゴリ</span>
+  <div id="B"><%#<span class="line"><h3>カテゴリ</h3></span>%>
     <div id="E">
+      
+      <p>---------------</p>
       <p>
         <img src="/assets/レストラン.jpg" alt=""></img>
       </p>
+      <p>---------------</p>
       
       <p>
         <img src="/assets/レストラン.jpg" alt=""></img>
       </p>
+      <p>---------------</p>
       
       <p>
         <img src="/assets/ラーメン.jpg" alt=""></img>
       </p>
+      <p>---------------</p>
       
       <p>
         <img src="/assets/ラーメン.jpg" alt=""></img>
       </p>
+      <p>---------------</p>
       
       <p>
         <img src="/assets/レストラン.jpg" alt=""></img>
       </p>
+      <p>---------------</p>
+      
+      <%#<p><h5>-----------------</h5></p>%>
     </div>
     
     
     
     
   </div>
-  <div id="C"><span class="line">店舗名</span>
+  <div id="C"><%#<span class="line"><h3>店舗名</h3></span>%>
     <div id="D">
+      
+      <p>---------------</p>
       <p>
         <%= link_to 'ジョイフル' , review_index9_path %>
       </p>
+      <p>---------------</p>
       <P>
         <%= link_to 'ココス' , review_index_path %>
       </P>
+      <p>---------------</p>
       <p>
         <%= link_to '筑豊 麺道場' , review_index3_path %>
       </p>
+      <p>---------------</p>
       <p>
         <%= link_to '石田 一龍' , review_index5_path %>
       </p>
+      <p>---------------</p>
       <p>
         <%= link_to 'ガスト' , review_index7_path %>
       </p>
+      <p>---------------</p>
       
       
     </div>
   </div>
 </div>
 
-
-
 <% end %>
+
+</div>
